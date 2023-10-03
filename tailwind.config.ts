@@ -2,8 +2,7 @@
 export default {
   content: [],
   theme: {
-    extend: {},
+    extend: {}
   },
-  plugins: [require('daisyui')],
+  plugins: [require('daisyui')]
 }
-
