@@ -1,23 +1,36 @@
-# Nuxt 3 Minimal Starter
+# Nuxt 3 Template
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Template project for nuxt3 with some goodies. 
+
+TODO:
+
+General: 
+- Docker environment
+- test deployment setup
+
+Frontend: 
+- ~~add Tailwind~~
+- add daisyUI
+  - implement dark an light theme
+- add layouts
+- add basic components
+- add i18n
+- add testing
+- try Tanstack Query
+- try trpc
+
+Backend: 
+- add Prisma
+- add dive deeper into TS backend architectures
+- add testing
 
 ## Setup
 
 Make sure to install the dependencies:
 
 ```bash
-# npm
-npm install
-
-# pnpm
-pnpm install
-
 # yarn
 yarn install
-
-# bun
-bun install
 ```
 
 ## Development Server
@@ -25,17 +38,9 @@ bun install
 Start the development server on `http://localhost:3000`:
 
 ```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
 # yarn
 yarn dev
 
-# bun
-bun run dev
 ```
 
 ## Production
@@ -43,33 +48,14 @@ bun run dev
 Build the application for production:
 
 ```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
 # yarn
 yarn build
-
-# bun
-bun run build
 ```
 
 Locally preview production build:
 
 ```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
 # yarn
 yarn preview
 
-# bun
-bun run preview
 ```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
