@@ -15,13 +15,15 @@ Frontend:
 - add layouts
 - add basic components
 - add i18n
+- add input validation
 - add testing
 - try Tanstack Query
 - try trpc
 
 Backend: 
+- add database
 - add Prisma
-- add dive deeper into TS backend architectures
+- add dive deeper into nuxt/TS backend architectures
 - add testing
 
 ## Setup
