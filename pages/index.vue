@@ -3,13 +3,11 @@
     <div class="card w-96 bg-primary text-primary-content mx-auto">
       <div class="card-body">
         <h2 class="card-title">
-          Card title!
+          {{ $t('welcome') }}
         </h2>
-        <p>If a dog chews shoes whose shoes does he choose?</p>
+        <p>{{ $t('tongueTwister') }}</p>
         <div class="card-actions justify-end">
-          <button class="btn">
-            Buy Now
-          </button>
+          <LanguageSwitcher />
         </div>
       </div>
     </div>
