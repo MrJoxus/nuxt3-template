@@ -1,7 +1,7 @@
 <!-- https://daisyui.com/components/dropdown/ -->
 
 <template lang="html">
-  <details ref="detailsRef" class="dropdown mb-32" @click="modal = true">
+  <details ref="detailsRef" class="dropdown" @click="modal = true">
     <summary class="m-1 btn">
       <slot name="title">
         {{ title }}
@@ -19,7 +19,7 @@
 </template>
 
 <script setup lang="ts">
-import { DetailsHTMLAttributes, ref } from 'vue'
+import type { DetailsHTMLAttributes } from 'vue'
 
 defineProps<{
   title?: string
