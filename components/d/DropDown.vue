@@ -2,12 +2,12 @@
 
 <template lang="html">
   <details ref="detailsRef" class="dropdown" @click="modal = true">
-    <summary class="m-1 btn">
+    <summary class="btn">
       <slot name="title">
         {{ title }}
       </slot>
     </summary>
-    <ul class="dropdown-content p-2 shadow z-[20] bg-base-100 rounded-box">
+    <ul class="dropdown-content shadow z-[20] bg-base-100 rounded-box">
       <slot name="dropDownItems" />
     </ul>
     <dialog

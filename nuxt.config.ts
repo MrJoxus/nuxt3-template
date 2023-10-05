@@ -3,7 +3,8 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: [
     '@nuxtjs/tailwindcss',
-    '@nuxtjs/i18n'
+    '@nuxtjs/i18n',
+    '@vueuse/nuxt'
   ],
   tailwindcss: {
     cssPath: '~/assets/scss/tailwind.scss'

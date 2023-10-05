@@ -8,6 +8,7 @@
         <p>{{ $t('tongueTwister') }}</p>
         <div class="card-actions justify-end">
           <LanguageSwitcher />
+          <ThemeSwitcher />
         </div>
       </div>
     </div>

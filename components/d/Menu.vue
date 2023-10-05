@@ -12,10 +12,10 @@
 
 <script lang="ts" setup>
 // TODO: add icon support
-import { menuItem } from '@/types'
+import type { MenuItem } from '@/types'
 
 defineProps<{
-  menuItems?: menuItem[]
+  menuItems?: MenuItem[]
 }>()
 </script>
 

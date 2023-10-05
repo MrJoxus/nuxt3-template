@@ -1,1 +1,2 @@
-export type { menuItem } from './menu'
+export type { MenuItem } from './menu'
+export type { Themes } from './themes'
