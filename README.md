@@ -10,8 +10,9 @@ General:
 
 Frontend: 
 - ~~add Tailwind~~
-- add daisyUI
-  - implement dark an light theme
+- ~~add daisyUI~~
+  - ~~implement dark an light theme~~
+- ~~add icons~~
 - add layouts
 - add basic components
 - add i18n
