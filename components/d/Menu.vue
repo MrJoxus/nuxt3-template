@@ -1,8 +1,9 @@
 <template>
-  <ul class="menu bg-base-100 w-56 rounded-box">
+  <ul class="menu bg-base-100 min-w-56 rounded-box">
     <slot>
-      <li v-for="item in menuItems" :key="item.title">
-        <NuxtLink to="item.to">
+      <li v-for="item in items" :key="item.title" class="my-1">
+        <NuxtLink :to="item.to">
+          <component :is="item.icon" v-if="item.icon" class="h-6" />
           {{ item.title }}
         </NuxtLink>
       </li>
@@ -11,14 +12,15 @@
 </template>
 
 <script lang="ts" setup>
-// TODO: add icon support
 import type { MenuItem } from '@/types'
 
 defineProps<{
-  menuItems?: MenuItem[]
+  items?: MenuItem[]
 }>()
 </script>
 
-<style lang="">
-
+<style lang="scss" scoped>
+a.router-link-exact-active {
+  background-color: hsl(var(--bc) / 0.1);
+}
 </style>
