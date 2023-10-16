@@ -1,5 +1,5 @@
 <template>
-  <div class="swap swap-rotate btn" :class="{'swap-active': themeIsLight}" @click="toggleTheme">
+  <div class="swap swap-rotate px-4" :class="{'swap-active': themeIsLight}" @click="toggleTheme">
     <SunIcon class=" h-6 w-6 swap-on" />
     <MoonIcon class=" h-6 w-6 swap-off" />
   </div>

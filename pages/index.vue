@@ -1,6 +1,6 @@
 <template>
-  <div class="container mx-auto p-4">
-    <div class="card w-96 bg-primary text-primary-content mx-auto">
+  <div>
+    <div class="card w-96 bg-primary text-primary-content">
       <div class="card-body">
         <h2 class="card-title">
           {{ $t('welcome') }}

@@ -1,8 +1,9 @@
 <!-- https://daisyui.com/components/dropdown/ -->
 
 <template lang="html">
-  <details ref="detailsRef" class="dropdown" @click="modal = true">
-    <summary class="btn">
+  <!-- TODO: add dropdown icon -->
+  <details ref="detailsRef" class="dropdown" @click="open = true">
+    <summary class="px-4">
       <slot name="title">
         {{ title }}
       </slot>
@@ -10,30 +11,28 @@
     <ul class="dropdown-content shadow z-[20] bg-base-100 rounded-box">
       <slot name="dropDownItems" />
     </ul>
-    <dialog
-      class="modal z-[10]"
-      :class="{'modal-open': modal}"
-      @click="closeDropdown"
-    />
   </details>
 </template>
 
 <script setup lang="ts">
 import type { DetailsHTMLAttributes } from 'vue'
+import { onClickOutside } from '@vueuse/core'
 
 defineProps<{
   title?: string
 }>()
 
 const detailsRef = ref<DetailsHTMLAttributes | null>(null)
-const modal = ref(false)
+const open = ref(false)
 
 function closeDropdown () {
   if (detailsRef.value) {
     detailsRef.value.open = false
-    modal.value = false
+    open.value = false
   }
 }
+
+onClickOutside(detailsRef, () => open && closeDropdown(), {})
 </script>
 
 <style lang="scss">

@@ -3,16 +3,19 @@
     <div class="grid-container relative container mx-auto min-h-screen">
       <div class="grid-item-nav sticky flex justify-between top-0 h-screen overflow-hidden">
         <div class="flex-1">
-          <div class="h-16 flex justify-center py-2">
+          <!-- Nav Header -->
+          <div class="h-16 flex justify-center py-2 px-4">
             <CakeIcon class="text-primary" />
           </div>
-          <div class="h-[calc(100%_-_64px)] overflow-scrolly pr-4">
-            <DMenu :items="items" />
+          <!-- Nav Menu -->
+          <div class="h-[calc(100%_-_64px)] overflow-scrolly p-4">
+            <DMenu class="p-0 w-full" :items="items" />
           </div>
         </div>
         <div class="nav-shadow" />
       </div>
-      <div class="grid-item-header sticky top-0 pl-8">
+      <div class="grid-item-header sticky top-0 px-8">
+        <!-- Nav -->
         <DNavbar>
           <template #start>
             <NuxtLink :to="localePath({name: 'index'})" class="btn normal-case text-xl">
@@ -21,6 +24,8 @@
           </template>
           <template #center />
           <template #end>
+            <LanguageSwitcher />
+            <ThemeSwitcher />
             <div class="join">
               <NuxtLink :to="localePath({name: 'login'})" class="join-item btn btn-ghost">
                 {{ $t('c.navbar.login') }}
@@ -32,7 +37,8 @@
           </template>
         </DNavbar>
       </div>
-      <div class="grid-item-main p-8 pt-0">
+      <div class="grid-item-main p-8 pt-4">
+        <!-- Content -->
         <slot />
       </div>
     </div>

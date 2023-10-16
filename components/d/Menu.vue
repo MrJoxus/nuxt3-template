@@ -1,5 +1,5 @@
 <template>
-  <ul class="menu bg-base-100 min-w-56 rounded-box">
+  <ul class="menu bg-base-100 rounded-box">
     <slot>
       <li v-for="item in items" :key="item.title" class="my-1">
         <NuxtLink :to="item.to">
@@ -22,5 +22,8 @@ defineProps<{
 <style lang="scss" scoped>
 a.router-link-exact-active {
   background-color: hsl(var(--bc) / 0.1);
+}
+.menu {
+  min-width: 14rem;
 }
 </style>
