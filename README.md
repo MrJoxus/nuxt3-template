@@ -14,8 +14,10 @@ Frontend:
   - ~~implement dark an light theme~~
 - ~~add icons~~
 - add layouts
+  - cms
+  - website
 - add basic components
-- add i18n
+- ~~add i18n~~
 - add input validation
 - add testing
 - try Tanstack Query

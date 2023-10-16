@@ -14,7 +14,10 @@
     </div>
   </div>
 </template>
-<script setup>
+<script setup lang="ts">
+definePageMeta({
+  layout: 'cms'
+})
 
 </script>
 <style lang="">
