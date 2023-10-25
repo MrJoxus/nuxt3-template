@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="navbar  container mx-auto">
+    <div class="navbar bg-white container mx-auto">
       <div class="navbar-start">
         <slot name="start" />
       </div>

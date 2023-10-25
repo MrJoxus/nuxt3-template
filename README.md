@@ -24,8 +24,9 @@ Frontend:
 - try trpc
 
 Backend: 
-- add database
-- add Prisma
+- ~~add database~~
+  - ~~mariadb~~
+- ~~add Prisma~~
 - add dive deeper into nuxt/TS backend architectures
 - add testing
 

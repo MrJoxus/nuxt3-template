@@ -8,13 +8,13 @@
             <CakeIcon class="text-primary" />
           </div>
           <!-- Nav Menu -->
-          <div class="h-[calc(100%_-_64px)] overflow-scrolly p-4">
+          <div class="h-[calc(100%_-_64px)] overflow-y-scroll p-4">
             <DMenu class="p-0 w-full" :items="items" />
           </div>
         </div>
         <div class="nav-shadow" />
       </div>
-      <div class="grid-item-header sticky top-0 px-8">
+      <div class="grid-item-header sticky top-0 px-8 z-[20]">
         <!-- Nav -->
         <DNavbar>
           <template #start>
@@ -56,20 +56,15 @@ const items = [
     to: localePath({ name: 'index' })
   },
   {
-    title: 'Home2',
+    title: 'CV',
     icon: AcademicCapIcon,
-    to: localePath({ name: 'inde2' })
-  }, {
-    title: 'Home3',
-    icon: MoonIcon,
-    to: localePath({ name: 'index3' })
+    to: localePath({ name: 'cv' })
   }
 ]
 
 </script>
 
 <style lang="scss">
-
 .nav-shadow {
   @apply my-56;
   @apply w-0;
