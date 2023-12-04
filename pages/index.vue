@@ -16,7 +16,7 @@
 </template>
 <script setup lang="ts">
 definePageMeta({
-  layout: 'cms'
+  layout: 'website'
 })
 
 </script>

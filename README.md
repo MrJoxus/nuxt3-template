@@ -5,8 +5,7 @@ Template project for nuxt3 with some goodies.
 TODO:
 
 General: 
-- Docker environment
-- test deployment setup
+- ~~Docker environment~~
 
 Frontend: 
 - ~~add Tailwind~~
@@ -14,8 +13,7 @@ Frontend:
   - ~~implement dark an light theme~~
 - ~~add icons~~
 - add layouts
-  - cms
-  - website
+  - ~~website~~
 - add basic components
 - ~~add i18n~~
 - add input validation

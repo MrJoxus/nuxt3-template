@@ -46,7 +46,7 @@
 </template>
 
 <script lang="ts" setup>
-import { AcademicCapIcon, MoonIcon, HomeIcon, CakeIcon } from '@heroicons/vue/24/solid'
+import { HomeIcon, CakeIcon } from '@heroicons/vue/24/solid'
 const localePath = useLocalePath()
 
 const items = [
@@ -54,11 +54,6 @@ const items = [
     title: 'Home',
     icon: HomeIcon,
     to: localePath({ name: 'index' })
-  },
-  {
-    title: 'CV',
-    icon: AcademicCapIcon,
-    to: localePath({ name: 'cv' })
   }
 ]
 
