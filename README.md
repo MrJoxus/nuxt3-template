@@ -21,12 +21,12 @@ Frontend:
 - add input validation
 - add testing
 - try Tanstack Query
-- try trpc
 
 Backend: 
 - ~~add database~~
   - ~~mariadb~~
 - ~~add Prisma~~
+- try trpc
 - add dive deeper into nuxt/TS backend architectures
 - add testing
 
@@ -37,6 +37,8 @@ Make sure to install the dependencies:
 ```bash
 # yarn
 yarn install
+#or 
+docker compose build
 ```
 
 ## Development Server
@@ -46,7 +48,8 @@ Start the development server on `http://localhost:3000`:
 ```bash
 # yarn
 yarn dev
-
+#or 
+docker compose up 
 ```
 
 ## Production
